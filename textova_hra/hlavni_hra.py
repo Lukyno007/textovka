@@ -580,10 +580,37 @@ print("")
 
 print("Pokracujeme tedy dal..")
 
+print("")
+
+print("""Tva cesta jeste ani nezacala, muzes se vratit zpatky na plaz, kde si zacal, muzes se vydat dal, pred tebou
+je uzka cesticka, ktera vede do velice temneho lesa a nebo se muzes vratit do chatrce a zabit Bohutu. Je to na tobe.""")
+print("plaz / les / chatrc")
+tva_volba_co_dal = input()
+while tva_volba_co_dal != "plaz" and tva_volba_co_dal != "lest" and tva_volba_co_dal != "chatrc":
+    print("Zadal jsi neplatny prikaz, zkus to znovu: ")
+    tva_volba_co_dal = input()
 
 
+# tady bude pribeh rozdeleny na tady dame plaz.
 
+if tva_volba_co_dal == "plaz":
+    print("Odchazis pomalu od chatrce, opet kolem stromu s ovocem a kolem jeskyne. Na plazi")
+    print("to zatim vypada, ze se zvedla voda, asi priliv, pomyslis si. Dokonce ani nevidis svou")
+    print("truhlicku. ")
 
+    # tady vymyslime, co budeme delat na plazi, neco ve stylu porad mam hlad, na plazi se objevilo spoustu krabu
+
+elif tva_volba_co_dal == "chatrc":
+    print("Bohuta ti nijak neprirostl k srdci a ty si to rozhodne nenchas libit. Vracis se zpet do chatrce")
+    print("s jasnou vidinou toho, co chces udelat. Ukoncit toho blbce jednou pro vzdy.")
+
+    # tady dame pribeh, kdy se pohadam s bohutou a zacnu s nim bojvovat, u nej pak v kapse habitu
+    # najdes penize a a vezmes si i jeho kapi, to bude tva prvni zbroj.
+
+else:
+    print("Od chatrce ses vydal po uzke cesticce smerem k temnemu lesu.")
+
+    # tady bude hlavni pribeh, kdy si hrac zvolil cestu do lesa...
 
 
 
